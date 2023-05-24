@@ -125,6 +125,7 @@
 }
 .search-box.active{
   width: 350px;
+  margin-left: -350px;
 }
 .search-box input{
   width: 100%;
@@ -196,4 +197,7 @@
 .search-box .search-data.active{
   display: none;
 }
-
+.search-box-wrapper{
+  position: absolute;
+  left: 26vw;
+}
