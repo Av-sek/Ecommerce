@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,21 +13,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
 
-    
+
+
     <!-- Style.css -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body id="body">
     <div id="main">
         <header id="div1">
             <div class="row">
                 <div class="col-md-8">
                     <div class="logo text-white">
-                    <img src="logo.png" alt="" class="img">
+                        <img src="logo.png" alt="" class="img">
                     </div>
                 </div>
                 <div class="col-md-4 right-header">
@@ -34,63 +37,71 @@
                         <span id="facebook-icon"><i class="fa fa-beat fa-facebook-official"></i></span>
                         <span id="instagram-icon"><i class="fa fa-beat fa-instagram"></i></span>
                         <span id="twitter-icon"><i class="fa fa-beat fa-twitter"></i></i></span>
-                        <span id="linkedin-icon"><i class="fa fa-beat fa-linkedin" ></i></span>
+                        <span id="linkedin-icon"><i class="fa fa-beat fa-linkedin"></i></span>
                         <span id="youtube-icon"><i class="fa fa-beat fa-twitch"></i></span>
                     </div>
                     <div class="search-box">
-                            <input type="text" placeholder="Type to search..">
-                            <div class="search-icon">
+                        <input type="text" placeholder="Type to search..">
+                        <div class="search-icon">
                             <i class="fa fa-search"></i>
-                            </div>
-                            <div class="cancel-icon">
-                                <i class="fa fa-times"></i>
-                            </div>
+                        </div>
+                        <div class="cancel-icon">
+                            <i class="fa fa-times"></i>
+                        </div>
                         <div class="search-data">
                         </div>
                     </div>
                 </div>
-            </header>
+        </header>
+    </div>
+    <div id="main-sidebar">
+        <div id="div2">
+            <nav class="nav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdend">
+                        <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Offer
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Gadgets</a>
+                            <a class="dropdown-item" href="#">Apparels</a>
+                            <a href="#" class="dropdown-item">Groceries</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <div id="main-sidebar">
-            <div id="div2">
-                <nav class="nav">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a href="#" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item dropdend">
-                            <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Offer
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="#">Gadgets</a>
-                              <a class="dropdown-item" href="#">Apparels</a>
-                              <a href="#" class="dropdown-item">Groceries</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Contact Us</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div id="main-body">
-                <div id="div3"></div>
-                <div id="div4"></div>
-            </div>
+        <div id="main-body">
+            <div id="div3"></div>
+            <div id="div4"></div>
         </div>
     </div>
+    </div>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
