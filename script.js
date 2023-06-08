@@ -25,3 +25,18 @@ cancelBtn.onclick =()=>{
   searchData.classList.toggle("active");
   searchInput.value = "";
 }
+
+
+function readMore(){
+  $("#read-more").removeClass("d-none");
+  $('#readmorebutton').addClass('d-none')
+  $('#readlessbutton').removeClass('d-none')
+  $('.dots').addClass('d-none')
+}
+
+function readLess(){
+  $("#read-more").addClass("d-none");
+  $('#readmorebutton').removeClass('d-none')
+  $('#readlessbutton').addClass('d-none')
+  $('.dots').removeClass('d-none')
+}

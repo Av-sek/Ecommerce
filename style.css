@@ -16,6 +16,9 @@
 
   }
 
+body{
+  overflow-x: hidden;
+}
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
     40% {transform: translateY(-30px);} 
@@ -54,13 +57,13 @@
 /* Main body */
 #div2{
     background-color:var(--primary);
-    height: 80vh;
+    /* height: 80vh; */
     width: 15%;
     border-radius: 0px 0px 0px 40px;
 }
 #div3{
     background-color:var(--secondary);
-    height: 80vh;
+    height: 1000vh;
     text-align: center;
 }
 .carousel-inner {
@@ -84,24 +87,54 @@
     border: 1px solid black;
     padding: 1rem;
 }
-.nav{
-    height: 60vh;
-}
+
 .nav ul li{
     list-style-type: none;
-    
-    
 }
 .navbar-nav .nav-link{
     color: white;
     border-radius: 0px 20px 0px 20px;
+    font-size: 20px;
     padding:10px;
-    margin: 1em 1em 0 1em;
+    margin-left: 3em;
+    border: 1 px solid black;
 }
 .nav-link:hover{
     color:black;
     background-color: var(--secondary);
     padding:5px;
+}
+.nav-item{
+  height: 8vh;
+}
+
+
+.hot-news h4{
+  font-size: 20px;
+  background-color: var(--secondary);
+  height: 25px;
+  border-radius: 0 10px;
+}
+.hot-news p{
+  color:white;
+  font-size: 16px;
+}
+.hot-news p span{
+  font-size: 16px;
+}
+button{
+  border: none;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 0 10px 0 10px;
+  padding: 5px;
+  
+}
+button:hover{
+  background-color: var(--primary);
+  text-decoration: underline;
+  color: var(--secondary);
 }
 
 /* Icons */
@@ -221,4 +254,23 @@
 .search-box-wrapper{
   position: absolute;
   left: 22vw;
+}
+
+
+/* Product */
+.products-list{
+  margin-left:80px;
+}
+
+.card img {
+  height: 300px;
+}
+.btn {
+  border: none;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 10px 0 10px;
+  padding: 5px;
+  background-color: var(--primary);
 }
