@@ -28,20 +28,23 @@
     <div id="main">
         <header id="div1">
             <div class="row">
-                <div class="col-md-8 col-sm-4">
+                <div class="col-md-6 col-sm-4">
                     <div class="logo text-white">
                         <img src="./image/logo.png" alt="" class="img">
                     </div>
                 </div>
                 <div class="col-md-4 right-header col-sm-4">
                     <!--  -->
-                    <div class="icons">
-                        <span id="facebook-icon"><i class="fa fa-facebook-official"></i></span>
-                        <span id="instagram-icon"><i class="fa fa-instagram"></i></span>
-                        <span id="twitter-icon"><i class="fa fa-twitter"></i></i></span>
-                        <span id="linkedin-icon"><i class="fa fa-linkedin"></i></span>
-                        <span id="youtube-icon"><i class="fa fa-youtube"></i></span>
-                    </div>
+                    <div class="row">
+                        <div class="icons">
+                            <span id="facebook-icon"><i class="fa fa-facebook-official"></i></span>
+                            <span id="instagram-icon"><i class="fa fa-instagram"></i></span>
+                            <span id="twitter-icon"><i class="fa fa-twitter"></i></i></span>
+                            <span id="linkedin-icon"><i class="fa fa-linkedin"></i></span>
+                            <span id="youtube-icon"><i class="fa fa-youtube"></i></span>
+                            
+                        </div>
+                </div>
                     <div class="search-box-wrapper">
                         <div class="search-box">
                             <input type="text" placeholder="Type to search..">
@@ -53,6 +56,35 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="overlay-form">
+                        <div class="close-btn" onclick="toggleForm()">&times;</div>
+                            <h1>Create a new account</h1>
+                            <p>Join our community. Let's set up your account</p>
+                            <div class="form-element">
+                            <label for="fullname">Fullname</label>
+                            <input type="text" id="fullname">
+                            </div>
+                            <div class="form-element">
+                            <label for="email">Email</label>
+                            <input type="email" id="email">
+                            </div>
+                            <div class="form-element">
+                            <label for="password-1">Password</label>
+                            <input type="password" id="password-1">
+                            </div>
+                            <div class="form-element">
+                            <label for="password-2">Confirm password</label>
+                            <input type="password" id="password-2">
+                            </div>
+                            <div class="form-element">
+                            <button>Signup</button>
+                            </div>
+                      </div>
+                      <div class="center">
+                        <button onclick="toggleForm()">Signup</button>
+                      </div>
                 </div>
         </header>
     </div>
@@ -138,7 +170,15 @@
                                 <img class="card-img-top" src="./image/products/1.jpeg" alt="Card image cap">
                                 <div class="card-body">
                                 <h5 class="card-title">Mobile 1</h5>
-                                <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+                                <div class="row">
+                                        <div class="col-6">
+                                            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="" class="btn btn-primary w-100">Browse</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -147,7 +187,15 @@
                                 <img class="card-img-top" src="./image/products/2.jpeg" alt="Card image cap">
                                 <div class="card-body">
                                 <h5 class="card-title">Mobile 2</h5>
-                                <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+                                <div class="row">
+                                        <div class="col-6">
+                                            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="" class="btn btn-primary w-100">Browse</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +204,15 @@
                                 <img class="card-img-top" src="./image/products/3.jpeg" alt="Card image cap">
                                 <div class="card-body">
                                 <h5 class="card-title">Mobile 3</h5>
-                                <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+                                <div class="row">
+                                        <div class="col-6">
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="" class="btn btn-primary">Browse</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -164,8 +220,16 @@
                             <div class="card" style="width: 10rem;">
                                 <img class="card-img-top" src="./image/products/4.jpeg" alt="Card image cap">
                                 <div class="card-body">
-                                <h5 class="card-title">Mobile 4</h5>
-                                <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+                                    <h5 class="card-title">Mobile 4</h5>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="" class="btn btn-primary">Browse</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -174,7 +238,15 @@
                                 <img class="card-img-top" src="./image/products/5.jpeg" alt="Card image cap">
                                 <div class="card-body">
                                 <h5 class="card-title">Mobile 5</h5>
-                                <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+                                <div class="row">
+                                        <div class="col-6">
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="" class="btn btn-primary">Browse</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -183,7 +255,7 @@
                                 <img class="card-img-top" src="./image/products/6.jpeg" alt="Card image cap">
                                 <div class="card-body">
                                 <h5 class="card-title">Mobile 6</h5>
-                                <a href="#" class="btn btn-primary w-100 w-100">Add to Cart</a>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
                                 </div>
                             </div>
                         </div>
