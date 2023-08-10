@@ -58,33 +58,55 @@
                     </div>
                 </div>
                 <div class="col-md-1">
-                    <div class="overlay-form">
-                        <div class="close-btn" onclick="toggleForm()">&times;</div>
-                            <h1>Create a new account</h1>
-                            <p>Join our community. Let's set up your account</p>
-                            <div class="form-element">
-                            <label for="fullname">Fullname</label>
-                            <input type="text" id="fullname">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong" id="signup-button">
+                        Sign UP
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <form action="/examples/actions/confirmation.php" method="post">
+                                    <h3>Create Account</h3>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                            <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
+                                            <input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                            <input type="text" class="form-control" name="password" placeholder="Password" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-lock"></i>
+                                                <i class="fa fa-check"></i>
+                                            </span>
+                                            <input type="text" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+                                        </div>
+                                    </div>        
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary btn-block btn-lg">Sign Up</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                    <p class="small text-center">By clicking the Sign Up button, you agree to our <br><a href="#">Terms &amp; Conditions</a>, and <a href="#">Privacy Policy</a>.</p>
+                                </form>
                             </div>
-                            <div class="form-element">
-                            <label for="email">Email</label>
-                            <input type="email" id="email">
-                            </div>
-                            <div class="form-element">
-                            <label for="password-1">Password</label>
-                            <input type="password" id="password-1">
-                            </div>
-                            <div class="form-element">
-                            <label for="password-2">Confirm password</label>
-                            <input type="password" id="password-2">
-                            </div>
-                            <div class="form-element">
-                            <button>Signup</button>
-                            </div>
-                      </div>
-                      <div class="center">
-                        <button onclick="toggleForm()">Signup</button>
-                      </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
         </header>
     </div>
